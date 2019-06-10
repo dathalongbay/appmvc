@@ -12,6 +12,7 @@ class PostController {
         echo "<br>" . __METHOD__;
 
         $model = new PostModel();
+
         $data = $model->getAll();
 
         include_once "mvc/view/post/index.php";
@@ -23,6 +24,7 @@ class PostController {
         echo "<br>" . __METHOD__;
 
         $model = new PostModel();
+
         $data = $model->getAll();
 
         include_once "mvc/view/post/create.php";
@@ -34,6 +36,7 @@ class PostController {
         echo "<br>" . __METHOD__;
 
         $model = new PostModel();
+
         $data = $model->getAll();
 
         include_once "mvc/view/post/edit.php";
@@ -45,6 +48,7 @@ class PostController {
         echo "<br>" . __METHOD__;
 
         $model = new PostModel();
+
         $data = $model->getAll();
 
         include_once "mvc/view/post/delete.php";
