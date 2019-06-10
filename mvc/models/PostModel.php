@@ -1,10 +1,13 @@
 <?php
-namespace App\Model;
+namespace App\Models;
 
-class PostModel {
+class PostModel extends Database {
 
 
     public function getAll() {
+
+
+
         $data = array();
         $data[] = array("id" => 1, "name" => "productA");
         $data[] = array("id" => 2, "name" => "productB");

@@ -1,0 +1,25 @@
+<?php
+namespace App\Models;
+
+class Database {
+
+    public $connection;
+
+    const DATABASE_SERVER = "localhost";
+
+    const DATABASE_USER = "root";
+
+    const DATABASE_PASSWORD = "";
+
+    const DATABASE_NAME = "mvc1";
+
+    public function __construct()
+    {
+        if (!$this->connection) {
+            $this->connection = mysqli_connect(self::DATABASE_SERVER, self::DATABASE_USER,
+                DATABASE_PASSWORD, DATABASE_NAME);
+        }
+    }
+
+
+}
