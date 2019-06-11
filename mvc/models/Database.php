@@ -1,5 +1,5 @@
 <?php
-namespace App\Models;
+namespace MVC\Models;
 
 class Database {
 
@@ -17,7 +17,7 @@ class Database {
     {
         if (!$this->connection) {
             $this->connection = mysqli_connect(self::DATABASE_SERVER, self::DATABASE_USER,
-                DATABASE_PASSWORD, DATABASE_NAME);
+                self::DATABASE_PASSWORD, self::DATABASE_NAME);
         }
     }
 
